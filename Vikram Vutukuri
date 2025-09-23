@@ -1,1 +1,19 @@
 this is github 
+
+
+
+# Generate approximately 1 MB of random text.
+# 1 MB ~ 1,000,000 characters (since 1 char ~ 1 byte in UTF-8 for ASCII).
+
+import random
+import string
+
+size = 1_000_000  # target size in characters
+text = ''.join(random.choices(string.ascii_letters + string.digits + ' ', k=size))
+
+# Save to file so the user can access it
+file_path = "/mnt/data/random_text_1mb.txt"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(text)
+
+file_path
