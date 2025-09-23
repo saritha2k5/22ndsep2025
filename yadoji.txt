@@ -1,0 +1,54 @@
+
+These commands help you navigate, create, delete, and manage files and folders.
+
+
+ls: Lists the contents of a directory. This is one of the most frequently used commands.
+Example: ls -l (lists in long format, showing permissions, owner, size, etc.)
+pwd: Prints the current working directory, showing your current location in the file system.
+cd: Changes the current directory.
+Example: cd /home/user/documents (changes to the 'documents' directory)
+Example: cd .. (moves up one directory level)
+Example: cd ~ (changes to the user's home directory)
+mkdir: Creates a new directory.
+Example: mkdir new_folder
+rmdir: Deletes an empty directory.
+Example: rmdir empty_folder
+touch: Creates an empty file or updates the timestamp of an existing file.
+Example: touch new_file.txt
+cp: Copies files or directories.
+Example: cp file.txt /path/to/destination
+Example: cp -r directory /path/to/destination (recursively copies a directory and its contents)
+mv: Moves or renames files and directories.
+Example: mv old_name.txt new_name.txt (renames a file)
+Example: mv file.txt /path/to/new_location (moves a file)
+rm: Deletes files or directories.
+Example: rm file.txt
+Example: rm -r directory_to_delete (recursively deletes a directory and its contents)
+cat: Displays the contents of a file.
+Example: cat my_document.txt
+less: Allows you to view file contents page by page, useful for large files.
+Example: less large_log.txt
+head: Displays the first few lines of a file (default is 10 lines).
+Example: head -n 5 file.txt (displays the first 5 lines)
+tail: Displays the last few lines of a file (default is 10 lines).
+Example: tail -n 5 file.txt (displays the last 5 lines)
+
+System Information and Utilities
+
+These commands provide information about your system and help with general tasks.
+
+
+echo: Prints text to the terminal.
+Example: echo "Hello, Linux!"
+man: Displays the manual page for a command, providing detailed information about its usage and options.
+Example: man ls
+clear: Clears the terminal screen.
+uname: Prints system information, such as the kernel name.
+Example: uname -a (shows all system information)
+whoami: Displays the current username.
+df: Reports file system disk space usage.
+du: Estimates file space usage.
+top: Displays Linux processes, showing CPU and memory usage in real-time.
+ps: Reports a snapshot of the current processes.
+
+Permissions and Ownership

@@ -1,0 +1,38 @@
+
+# main.py
+import mypandas as mp
+
+# Step 1: Load CSV
+df = mp.readfile("empss.csv")
+print(df)
+
+# Step 2: Show DataFrame
+print("\n--- DataFrame ---")
+df.show()
+
+# Step 3: Access row
+print("\nRow 2:", df[1])  
+
+# Step 4: Access column
+print("\nSalaries:", df["Salary"])
+
+# Step 5: Access cell
+print("\nName of 3rd employee:", df[2]["Name"])
+
+# Step 6: Modify a column
+df["Bonus"] = [2000, 2500, 1800, 2200, 3000]
+print("\n--- After Adding Bonus Column ---")
+df.show()
+
+# Step 7: Modify a cell
+df[0]["Salary"] = "52000"
+print("\n--- After Modifying Salary of Row 1 ---")
+df.show()
+
+# Step 8: Save to file
+df.save_to_file("new_emps.csv")
+
+# Step 9: Column operations
+print("\nSum Salary:", df["Salary"].sum())
+print("Max Salary:", df["Salary"].max())
+print("Min Salary:", df["Salary"].min())
